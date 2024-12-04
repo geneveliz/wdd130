@@ -1,4 +1,4 @@
-/* Global Styles and CSS Variables */
+/* Global Styles*/
 :root {
     --primary-color: #333;
     --accent-color: #ff6347;
@@ -32,7 +32,7 @@ header img {
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;  /* Cambiado a flex para mostrar los elementos en una fila */
+    display: flex;  
     justify-content: center;
     gap: 20px;
 }
@@ -139,21 +139,6 @@ footer p {
 .sociallinks a:hover img {
     opacity: 0.8;
 }
-
-/* Corregir sintaxis de linear-gradient */
-input, button {
-    background-image: linear-gradient(to top, #ff6347, #333); /* Corregido gradiente */
-}
-
-input:hover, button:hover {
-    background-image: linear-gradient(to top, #ff6347, #444);
-}
-
-input:active, button:active {
-    background-image: linear-gradient(to top, #ff6347, #222);
-}
-
-
 
 
 
