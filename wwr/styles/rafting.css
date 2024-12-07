@@ -1,39 +1,39 @@
-/* Global Styles and CSS Variables */
+/*CSS rafting*/
 :root {
-    --primary-color: #333;
-    --accent-color: #ff6347;
-    --background-color: #f4f4f4;
-    --text-color: #fff;
-    --secondary-text-color: #666;
+    --primary-color: #26408B;
+    --accent-color: #6688B0;
+    --background-color: hsl(212, 32%, 55%);
+    --text-color: #E4EDF1;
+    --secondary-text-color: #86ACC3;
 }
 
-/* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    margin-bottom: 20px;
 }
 
-/* Header Styling */
 header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
 header img {
     width: 100px;
-    max-width: 100%;
+    margin-bottom: 20px;
 }
 
-/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;  /* Cambiado a flex para mostrar los elementos en una fila */
-    justify-content: center;
+    display: flex;
     gap: 20px;
 }
 
@@ -47,26 +47,10 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Main Content Styling */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-main h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-main p {
-    font-size: 1.2em;
-    color: var(--text-color);
-}
-
-/* Hero Section Styling */
 .hero {
     position: relative;
     width: 100%;
+    background-image: linear-gradient(to top, #0b57d0, #ff6347);
 }
 
 .hero img {
@@ -77,10 +61,10 @@ main p {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 35%;
     left: 10%;
     font-size: 3em;
-    color: var(--text-color);
+    color: #1B246B;
 }
 
 .hero article {
@@ -99,31 +83,87 @@ main p {
     width: 50%;
     margin-left: 20px;
     border-radius: 5px;
-}
-
-/* Section Styling */
-section {
-    padding: 20px;
-    margin-top: 20px;
-    background-color: var(--primary-color);
-}
-
-section h2 {
-    font-size: 2em;
     color: var(--text-color);
 }
 
-/* Footer Styling */
+.history {
+    padding: 20px;
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.history h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.history p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.adventures {
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.adventure-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+    border-radius: 8px;
+    flex-basis: 18%;
+    min-width: 200px;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 20px 0;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer p {
     font-size: 1em;
     color: var(--text-color);
+    
 }
 
 .sociallinks a {
@@ -140,22 +180,14 @@ footer p {
     opacity: 0.8;
 }
 
-/* Corregir sintaxis de linear-gradient */
-input, button {
-    background-image: linear-gradient(to top, #ff6347, #333); /* Corregido gradiente */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
 }
 
-input:hover, button:hover {
-    background-image: linear-gradient(to top, #ff6347, #444);
+.social-icon:hover {
+    opacity: 0.8;  
 }
-
-input:active, button:active {
-    background-image: linear-gradient(to top, #ff6347, #222);
-}
-
-
-
-
-
-
 
