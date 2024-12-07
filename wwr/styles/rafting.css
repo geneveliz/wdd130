@@ -141,7 +141,7 @@ h2 {
 }
 
 .adventures figcaption {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--primary-color);
     color: var(--text-color);
     padding: 10px;
     font-size: 1rem;
