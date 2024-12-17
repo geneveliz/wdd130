@@ -2,7 +2,7 @@
 :root {
     --primary-color: #26408B;
     --accent-color: #6688B0;
-    --background-color: hsl(212, 32%, 55%);
+    --background-color: #688ab1;
     --text-color: #E4EDF1;
     --secondary-text-color: #86ACC3;
 }
@@ -47,108 +47,184 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-.hero {
-    position: relative;
-    width: 100%;
-    background-image: linear-gradient(to top, #0b57d0, #ff6347);
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    font-size: 3em;
-    color: #1B246B;
-}
-
-.hero article {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    background-color: rgba(27, 36, 107, 0.3);
-    padding: 15px;
-    color: var(--text-color);
-    width: 80%;
-    max-width: 500px;
-    font-size: 20px;
-}
-
-.hero article img {
-    float: right;
-    width: 50%;
-    margin-left: 20px;
-    border-radius: 5px;
-    color: var(--text-color);
-}
-
-.history {
+/* Contact Page Styles */
+.contact-info {
     padding: 20px;
-    background-color: var(--primary-color);
-    margin-top: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--text-color);
-}
-
-.history h2 {
-    font-size: 2em;
-    color: var(--text-color);
     text-align: center;
 }
 
-.history p {
-    font-size: 1.2em;
-    color: var(--text-color);
-    text-align: center;
+.company-info, .employee-profiles, .contact-form {
+    margin-bottom: 40px;
 }
 
-
-.adventures {
-    padding: 20px;
-    background-color: var(--primary-color);
-    text-align: center;
-}
-
-h2 {
+.company-info h2{
     font-size: 2rem;
     color: var(--text-color);
-    margin-bottom: 20px;
-}
-
-.adventure-items {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.adventures figure {
-    margin: 0;
+    margin-bottom: 30px;  /* Space below the heading */
     text-align: center;
-    border-radius: 8px;
-    flex-basis: 18%;
-    min-width: 200px;
 }
-
-.adventures img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.adventures figcaption {
-    background-color: #1B246B;
+.employee-profiles h2{
+    font-size: 2rem;
     color: var(--text-color);
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 10px;
+
+}
+.contact-form h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
+address p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+address a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+address a:hover {
+    color: var(--text-color);
+}
+
+/* Google Map */
+iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+/* Employee Profiles Section */
+.employee-profiles {
+    padding: 40px 20px 20px 20px;  
+    background-color: var(--background-color); 
+}
+.employee-profiles h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;  
+    margin-top: 0;  
+}
+
+.profiles-container {
+    display: flex;  
+    flex-direction: row; 
+    gap: 30px;  
+    justify-content: center;  
+    flex-wrap: wrap;  
+    margin-top: 20px;  
+}
+
+.profile {
+    text-align: center;
+    max-width: 300px; 
+    box-sizing: border-box;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center; /
+    border-radius: 8px;  /
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Square container for the form */
+.contact-form {
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E4EDF1;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 450px;
+    overflow-y: auto;
+    color: var(--primary-color);
+}
+
+/* Form styles */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+label {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+textarea {
+    height: 80px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(0.9);
+}
+
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -164,7 +240,16 @@ footer {
 footer p {
     font-size: 1em;
     color: var(--text-color);
-    
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: var(--accent-color);
 }
 
 .sociallinks a {
@@ -189,6 +274,6 @@ footer p {
 }
 
 .social-icon:hover {
-    opacity: 0.8;  
+    opacity: 0.8;
 }
 
