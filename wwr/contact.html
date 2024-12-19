@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Get in touch with Rafting Adventure for inquiries, reservations, or feedback. Our team is here to help you plan your next rafting adventure.">
-    <meta name="author" content="Rafting Adventure Team">
+    <meta name="author" content="Genesis">
     <link rel="stylesheet" href="styles/rafting.css">
     <title>Contact Us - Rafting Adventure</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -30,13 +30,12 @@
         <div class="contact-info">
             <h1>Contact Us</h1>
 
-            <!-- Company Information Section -->
             <section class="company-info">
                 <h2>Company Information</h2>
                 <address>
                     <p>123 Adventure Road, Adventure City, 56789</p>
                     <p>Phone: (123) 456-7890</p>
-                    <p>Email: <a href="mailto:info@raftingadventure.com">info@raftingadventure.com</a></p>
+                    <p>Email: <a href="mailto:info@raftingadventure.com" class="email-link">info@raftingadventure.com</a></p>
                 </address>
                 <h3>Our Location</h3>
                 <!-- Google Map iframe with proper styling -->
@@ -44,51 +43,58 @@
             </section>
 
             <!-- Employee Profiles Section -->
-<section class="employee-profiles">
-    <h2>Meet Our Team</h2>
-    <div class="profiles-container">
-        <div class="profile">
-            <img src="images/employee1.jpg" alt="Employee 1">
-            <figcaption>Laurie Snow, Rafting Guide</figcaption>
-        </div>
-        <div class="profile">
-            <img src="images/employee2.jpg" alt="Employee 2">
-            <figcaption>Ethan Carter, Adventure Coordinator</figcaption>
-        </div>
-        <div class="profile">
-            <img src="images/employee3.jpg" alt="Employee 3">
-            <figcaption>Neythan Hunter, Safety Officer</figcaption>
-        </div>
-    </div>
-</section>
+            <section class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <div class="profiles-container">
+                    <!-- Each profile should be inside a <figure> element -->
+                    <figure class="profile">
+                        <img src="images/employee1.jpg" alt="Employee 1">
+                        <figcaption>Laurie Snow, Rafting Guide</figcaption>
+                    </figure>
+                    <figure class="profile">
+                        <img src="images/employee2.jpg" alt="Employee 2">
+                        <figcaption>Ethan Carter, Adventure Coordinator</figcaption>
+                    </figure>
+                    <figure class="profile">
+                        <img src="images/employee3.jpg" alt="Employee 3">
+                        <figcaption>Neythan Hunter, Safety Officer</figcaption>
+                    </figure>
+                </div>
+            </section>
 
             <!-- Contact Form Section -->
             <section class="contact-form">
                 <h2>Send Us a Message</h2>
                 <form action="submit_form.php" method="POST">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-                    <label>Purpose of Message</label>
-                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                    <label for="general">General Inquiry</label>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+                    <label>Purpose of the Message:</label>
+                    <div>
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
 
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
 
                     <label for="newsletter">
                         <input type="checkbox" id="newsletter" name="newsletter">
-                        Please subscribe me to the monthly newsletter
+                        Subscribe to the monthly newsletter
                     </label>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </section>
         </div>
