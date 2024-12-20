@@ -157,7 +157,7 @@ footer p {
     padding: 12px 25px;
     font-size: 1.2rem;
     background-color: var(--background-color);
-    color: var(--accent-color);
+    color: var(--text-color);
     border-radius: 5px;
 }
 
