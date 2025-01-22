@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Genesis Korey Palomo Martinez  | WDD 130</title>
-<meta name="description" content="Genesis Korey Palomo Martinez, BYU IDAHO.">
-<meta name="author" content="Genesis Korey Palomo Martinez">
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="wwr/">Rafting Site</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Genesis Palomo | WDD 130</h1>
-      <img src="images/profile.jpg" alt="Hello, my name is Genesis Palomo " width="200">
-     <p>Hello! My name is Genesis Palomo and I am from Venezuela. I currently live in Brazil, </p>
-     <p>I have been married for 10 years and three beautiful children. I like to learn new things, </p>
-     <p>I am confident that I can create anything if I set my mind to learning, because I have the </p>
-     <p> potential as a daughter of God. I love nature and sharing with my family. </p>
-    </main>
+<html lang="en">
 
-<aside>
-  <h2>Venezuela</h2>
-  <img src="images/tachira (1).webp" alt="Tachira landscape">
-  <p>Tachira is one of the states of Venezuela, it is located in the west of the country, in the Andes region.It borders to the north with Zulia, to the northeast with Mérida, to the south with Barinas and Apure, and to the west with the Republic of Colombia. It is made up of 29 autonomous municipalities and 66 civil parishes. Among its main cities are San Cristóbal, Táriba, Rubio, La Grita, San Antonio del Táchira, La Fría, Santa Ana del Táchira, Capacho Nuevo, San Juan de Colón, Cordero and Capacho Viejo.</p>
-</aside>
-    <footer>
-      <p>©️2024 💕 Genesis Palomo 💕  Venezuela 🌹 </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Genesis Palomo Martinez, a course on web development with a focus on dynamic content.">
+    <meta name="author" content="Genesis Palomo Martinez ">
+    <title>WDD 131 - Dynamic Web Fundamentals - Genesis Palomo Martinez </title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Dynamic Web Page - Genesis Palomo Martinez </h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                <img src="images/profile.jpg" alt="Profile image of Luis Ramon Veliz, a portrait photo of Luis" />
+                My name is Genesis Palomo, I was born in the state of Tachira, an Andean state in Venezuela. 
+                I have currently been living in Brazil for 5 years with my family. I have been married for 10 years and have 3 children.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <img src="images/programming picture.jpg" alt="A collage of web development resources like code snippets and tools" />
+            <ul>
+                <li><a href="https://www.codewars.com/" target="_blank" rel="noopener noreferrer">CodeWars</a></li>
+                <li><a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a></li>
+                <li><a href="https://www.dev.to/" target="_blank" rel="noopener noreferrer">Dev.to</a></li>
+                <li><a href="https://www.tutorialspoint.com/" target="_blank" rel="noopener noreferrer">TutorialsPoint</a></li>
+                <li><a href="https://tympanus.net/codrops/" target="_blank" rel="noopener noreferrer">Codrops</a></li>
+                <li><a href="https://www.learn-js.org/" target="_blank" rel="noopener noreferrer">Learn-JS</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer aria-label="Footer section">
+        <p>&copy; <span id="currentyear">2025</span> Genesis Palomo Martinez, Brasil</p>
+        <p id="lastModified"></p>
     </footer>
-  </body>
+</body>
+
 </html>
+
